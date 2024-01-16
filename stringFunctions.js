@@ -1,9 +1,9 @@
 function getLonger(string1, string2){
     
-    if(!string1 && !string2){
+    if(string1==null || string2==null){
         throw new Error("This function requires two arguments!")
 }
-//     else if(string1.length==0 && string2.length==0){
+//     if(string1.length==0 || string2.length==0){
 //          throw new Error("This function requires two arguments!");
 // }
    
@@ -38,7 +38,7 @@ function greet(stringValue){
 
 function isSubstring(string1, string2){
     let isIncluded=false;
-    if(!string1 || !string2){
+    if(string1==null || string2==null){
         throw new Error("This function requires two arguments!")
 }
     else if(string1.length==0 || string2.length==0){
